@@ -9,25 +9,11 @@ recipe 'git', 'Installs git'
 recipe 'git::server', 'Sets up a runit_service for git daemon'
 recipe 'git::source', 'Installs git from source'
 
-supports 'amazon'
-supports 'arch'
-supports 'centos'
 supports 'debian'
-supports 'fedora'
-supports 'freebsd'
-supports 'mac_os_x', '>= 10.6.0'
-supports 'omnios'
-supports 'oracle'
-supports 'redhat'
-supports 'smartos'
-supports 'scientific'
 supports 'ubuntu'
-supports 'windows'
+
 
 depends 'build-essential'
-depends 'dmg'
-depends 'windows'
-depends 'yum-epel'
 
 source_url 'https://github.com/jssjr/git' if respond_to?(:source_url)
 issues_url 'https://github.com/jssjr/git/issues' if respond_to?(:issues_url)
